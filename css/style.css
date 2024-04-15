@@ -372,11 +372,18 @@ background: rgb(255, 255, 255);
   border-radius: 4px;
   /* row-gap: 8px; */
   flex-basis: calc((100% - 4 * 8) / 5);
+  padding:right left 22px ;
+  padding: top bottom 6px;
+}
+
+.sorting-button:nth-child(1) {
+  padding: left bottom 25px;
 }
 
 .sorting-button:is(:focus, :hover) {
   color: var(--main-background-color);
   background: var(--logo-color);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),0px 1px 2px 0px rgba(0, 0, 0, 0.08),0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 /* PROJECTS */
@@ -396,7 +403,10 @@ background: rgb(255, 255, 255);
   flex-basis: calc((100% - 2 * 30px) / 3);
   box-sizing: border-box;
   border: 1px solid var(--main-background-color);
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),0px 4px 4px 0px rgba(0, 0, 0, 0.06),0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+.projects-item:is(:hover, :focus) {
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),0px 4px 4px 0px rgba(0, 0, 0, 0.06),0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .projects-name {
